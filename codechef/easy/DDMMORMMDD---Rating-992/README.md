@@ -59,7 +59,7 @@ Fun fact: `29/02/2024` (read as `DD/MM/YYYY`) is a leap year day.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T08:00:30.943Z  
+**Submitted:** 2026-10-01T08:00:43.800Z  
 
 ```py
 t = int(input())
