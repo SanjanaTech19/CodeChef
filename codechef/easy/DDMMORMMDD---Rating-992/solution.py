@@ -10,7 +10,7 @@ while t > 0:
     
     if x<= 12 and y<=12:
         print('BOTH')
-    elif x >= 12:
+    elif x >= 12 and y<=12:
         print("DD/MM/YYYY")
     elif y >=12 :
         print("MM/DD/YYYY")
