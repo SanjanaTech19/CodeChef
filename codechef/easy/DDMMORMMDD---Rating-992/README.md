@@ -59,7 +59,7 @@ Fun fact: `29/02/2024` (read as `DD/MM/YYYY`) is a leap year day.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T07:58:29.624Z  
+**Submitted:** 2026-10-01T07:59:17.799Z  
 
 ```py
 t = int(input())
@@ -67,7 +67,7 @@ t = int(input())
 while t > 0:
     s = input()
     # Your code goes here
-    t -= 1
+    
     
     x = int(s[0:2])
     y = int(s[3:5])
@@ -78,6 +78,7 @@ while t > 0:
         print("DD/MM/YYYY")
     elif y >=12 :
         print("MM/DD/YYYY")
+    t-=1
 ```
 
 ---
