@@ -56,7 +56,7 @@ The string contains both  **010**  and  **101**  as substrings.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T17:07:22.638Z  
+**Submitted:** 2026-10-02T17:08:20.008Z  
 
 ```py
 # cook your dish here
