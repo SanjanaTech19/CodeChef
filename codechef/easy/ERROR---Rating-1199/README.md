@@ -56,7 +56,7 @@ The string contains both  **010**  and  **101**  as substrings.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T17:08:20.008Z  
+**Submitted:** 2026-10-02T17:09:22.785Z  
 
 ```py
 # cook your dish here
@@ -65,7 +65,7 @@ t = int(input())
 for i in range(t):
     s = input()
     
-    if ('010' or '101') in s:
+    if '010' in s or '101' in s:
         print("Good")
     else:
         print('Bad')
