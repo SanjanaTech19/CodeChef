@@ -87,7 +87,7 @@ The last digit is '1', which is odd, so the entire number is the largest odd sub
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T14:33:22.719Z  
+**Submitted:** 2026-10-02T14:33:36.032Z  
 
 ```py
 def findLargestOddSubstring(num):
