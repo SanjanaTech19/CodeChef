@@ -15,7 +15,7 @@ def findPeaks(A,n):
     peaks = []
     
     for i in range(1,n):
-        if (i == 0 or A[i] > A[i-1]) and (i == n - 1 or A[i] > A[i+1]):
+        if A[i] > A[i-1] and A[i] > A[i+1]:
             peaks.append(str(A[i]))
     
     if len(peaks) == 0:
