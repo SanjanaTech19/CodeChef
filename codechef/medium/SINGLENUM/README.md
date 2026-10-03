@@ -55,16 +55,17 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T10:20:05.595Z  
+**Submitted:** 2026-10-03T10:22:53.408Z  
 
 ```py
 class Solution:
     def singleNumber(self, nums):
         # write your code here
         
-        for i in nums:
-            if nums.count(i) == 1:
-                return i
+        result = 0
+        for num in nums:
+            result ^= num
+        return result
         
 
 ```
