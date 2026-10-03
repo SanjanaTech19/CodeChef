@@ -8,6 +8,5 @@ def mostFrequent(N: int, A: list) -> list:
     
     best_elem = min(num for num,count in freq.items() if count == max_freq)
     
-    return [best_elem,max_freq]
-    
+    return [best_elem , max_freq]
             
