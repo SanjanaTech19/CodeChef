@@ -59,10 +59,10 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T10:16:30.375Z  
+**Submitted:** 2026-10-03T10:17:06.339Z  
 
 ```py
-'''def findPeaks(A, n):
+def findPeaks(A, n):
     hasPeak = False
 
     for i in range(n):
@@ -73,19 +73,7 @@ Output
     if not hasPeak:
         print(-1)
 
-'''
-def findPeaks(A,n):
-    
-    peaks = []
-    
-    for i in range(1,n):
-        if (i == 0 or A[i] > A[i-1]) and (i == n - 1 or A[i] > A[i+1]):
-            peaks.append(str(A[i]))
-    
-    if len(peaks) == 0:
-        print(-1)
-    else:
-        print(" ".join(peaks))
+
 ```
 
 ---
