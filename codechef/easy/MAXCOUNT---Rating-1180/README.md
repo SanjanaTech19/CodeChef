@@ -65,7 +65,7 @@ In first case 2 occurs twice whereas all other elements occur only once. In seco
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T04:13:38.836Z  
+**Submitted:** 2026-10-03T04:17:32.477Z  
 
 ```py
 def mostFrequent(N: int, A: list) -> list:
@@ -78,8 +78,7 @@ def mostFrequent(N: int, A: list) -> list:
     
     best_elem = min(num for num,count in freq.items() if count == max_freq)
     
-    return [best_elem,max_freq]
-    
+    return [best_elem , max_freq]
             
 ```
 
