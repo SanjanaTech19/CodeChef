@@ -65,41 +65,44 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T08:44:33.294Z  
+**Submitted:** 2026-10-03T08:44:43.600Z  
 
 ```py
 # cook your dish here
 t = int(input())
 
-for i in range(t):
-    n,m = map(int, input().split())
+for _ in range(t):
+    n, m = map(int, input().split())
     a = input()
     
-    total_ones = a.count('1') * m
+    tot = a.count('1')
+    target = tot * m
     
-    if total_ones % 2 != 0:
+    if target % 2 != 0:
         print(0)
-    elif total_ones == 0:
+    elif target == 0:
         print(n * m)
-        
     else:
-        target = total_ones // 2
+        target //= 2
+        cur = 0
         
-        count = 0
-        current_ones = 0
-        
-        for i in range(2*n):
-            if a[i % n] == '1':
-                current_ones += 1
-            
-            # If the left side has reached our target, this is a "good spot"!
-            if current_ones == target:
-                count += 1
+        # Skip copies of A until we are close to the target
+        while m > 0:
+            if cur + tot < target:
+                m -= 1
+                cur += tot
+                continue
+            else:
+                break
                 
-        print(count)
-    
-    
-    
+        ans = 0
+        # Check at most 2 copies of A after skipping
+        for j in range(min(m, 2)):
+            for i in range(n):
+                ans += (cur == target)
+                cur += (a[i] == '1')
+                
+        print(ans)
 ```
 
 ---
