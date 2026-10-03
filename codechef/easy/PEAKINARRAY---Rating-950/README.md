@@ -59,7 +59,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T10:16:20.571Z  
+**Submitted:** 2026-10-03T10:14:12.714Z  
 
 ```py
 '''def findPeaks(A, n):
@@ -78,7 +78,7 @@ def findPeaks(A,n):
     
     peaks = []
     
-    for i in range(1,n):
+    for i in range(1,n-1):
         if A[i] > A[i-1] and A[i] > A[i+1]:
             peaks.append(str(A[i]))
     
