@@ -1,4 +1,4 @@
-def findPeaks(A, n):
+'''def findPeaks(A, n):
     hasPeak = False
 
     for i in range(n):
@@ -8,3 +8,16 @@ def findPeaks(A, n):
 
     if not hasPeak:
         print(-1)
+
+'''
+def findPeaks(A,n):
+    
+    peaks = ""
+    
+    for i in range(n):
+        if A[i] > A[i-1] and A[i] > A[i+1]:
+            peaks += str(A[i])
+    
+    if len(peaks) == 0:
+        return -1
+    
