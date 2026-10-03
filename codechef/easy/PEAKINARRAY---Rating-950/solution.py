@@ -12,12 +12,13 @@
 '''
 def findPeaks(A,n):
     
-    peaks = ""
+    peaks = []
     
     for i in range(n):
         if A[i] > A[i-1] and A[i] > A[i+1]:
-            peaks += str(A[i])
+            peaks.append(str(A[i]))
     
     if len(peaks) == 0:
-        return -1
-    
+        print(-1)
+    else:
+        print(" ".join(peaks))
