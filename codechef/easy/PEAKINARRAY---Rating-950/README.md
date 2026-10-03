@@ -59,7 +59,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T10:15:55.360Z  
+**Submitted:** 2026-10-03T10:16:20.571Z  
 
 ```py
 '''def findPeaks(A, n):
