@@ -79,7 +79,7 @@ The minimum value of the function is 8, which is achieved for indices 2 and 4. T
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T17:00:35.283Z  
+**Submitted:** 2026-10-03T17:00:56.269Z  
 
 ```py
 # cook your dish here
