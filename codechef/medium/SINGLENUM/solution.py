@@ -2,7 +2,8 @@ class Solution:
     def singleNumber(self, nums):
         # write your code here
         
-        for i in nums:
-            if nums.count(i) == 1:
-                return i
+        result = 0
+        for num in nums:
+            result ^= num
+        return result
         
