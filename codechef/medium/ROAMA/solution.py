@@ -4,7 +4,7 @@ a = list(map(int, input().split()))
 
 total_sum = sum(a)
 
-cur_score = sum(i+a[i] for i in range(n))
+cur_score = sum(i*a[i] for i in range(n))
 max_score = cur_score
 
 for k in range(1,n):
