@@ -86,7 +86,7 @@ This is the maximum score among all circular rotations.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T11:37:03.326Z  
+**Submitted:** 2026-10-05T11:37:24.021Z  
 
 ```py
 # cook your dish here
@@ -95,7 +95,7 @@ a = list(map(int, input().split()))
 
 total_sum = sum(a)
 
-cur_score = sum(i+a[i] for i in range(n))
+cur_score = sum(i*a[i] for i in range(n))
 max_score = cur_score
 
 for k in range(1,n):
